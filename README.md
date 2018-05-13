@@ -8,6 +8,9 @@ We take Keras InceptionNet-V3 model pretrained on Imagenet dataset and remove th
 nodes. The last fc layer is trained for 2 epochs keeping weights of remaining layers fixed. 
 All the layers in network are then trained for 2 epochs with small learning rate.
 
+Link to the finetuned model:
+https://drive.google.com/open?id=1FREXt0eG1Vm01D6sNyWfO5x5bqUmbKCp
+
 Model:
 
 ![Inceptionnet_V3](Results/Inceptionnet_V3.png)
