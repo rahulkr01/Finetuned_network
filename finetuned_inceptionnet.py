@@ -80,7 +80,7 @@ for i in range(total_test_batch):
 	avg+=acc
 print("avg: ", avg/total_test_batch)
 arr=np.vstack((actual_y,predicted_y)).T
-np.savetxt('a.txt',arr)
+np.savetxt('Results/finetune_log.txt',arr)
 
 	# avg+=eval_results["accuracy"]
 # print("test_accuracy: ",avg/total_test_batch)

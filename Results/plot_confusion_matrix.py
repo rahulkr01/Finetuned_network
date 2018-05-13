@@ -40,7 +40,7 @@ def plot_confusion_matrix(cm, classes,
     plt.ylabel('True label')
     plt.xlabel('Predicted label')
 
-y=np.loadtxt("prettrained_predicted_labels.txt")
+y=np.loadtxt("predicted_labels.txt")
 
 # Compute confusion matrix
 cnf_matrix = confusion_matrix(y[:,0], y[:,1])
