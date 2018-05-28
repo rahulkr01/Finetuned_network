@@ -43,12 +43,16 @@ def plot_confusion_matrix(cm, classes,
 y=np.loadtxt("predicted_labels.txt")
 
 # Compute confusion matrix
+
+y[:,0][y[:,0]==2]=1
+y[:,1][y[:,1]==2]=1
 cnf_matrix = confusion_matrix(y[:,0], y[:,1])
 np.set_printoptions(precision=2)
 
 
 
-class_names=['low_emp' 'mid_emp' 'high_emp']
+# class_names=['low_emp' 'mid_emp' 'high_emp']
+class_names=['low_emp' 'mid_emp']
 
 
 # Plot non-normalized confusion matrix
